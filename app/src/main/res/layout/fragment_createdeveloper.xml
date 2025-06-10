@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/btnCancel"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:background="@android:color/transparent"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developer"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/blue_text"/>
+        </LinearLayout>
+
+        <!-- Form Fields -->
+        <EditText
+            android:id="@+id/etBioID"
+            android:layout_width="match_parent"
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Bio ID"
+            android:drawablePadding="12dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/style_edite_text_rounded_corner_with_line"
+            android:paddingStart="10dp"
+            android:inputType="number"
+            android:drawableStart="@drawable/baseline_account_circle_24"/>
+
+        <EditText
+            android:id="@+id/etEmployeeID"
+            android:layout_width="match_parent"
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Employee ID"
+            android:layout_height="50dp"
+            android:drawablePadding="12dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/style_edite_text_rounded_corner_with_line"
+            android:paddingStart="10dp"
+            android:inputType="number"
+        android:drawableStart="@drawable/baseline_account_circle_24"/>
+
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="12dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/style_edite_text_rounded_corner_with_line"
+            android:paddingStart="10dp"
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Name"
+            android:inputType="text"
+            android:drawableStart="@drawable/profile_circle_svgrepo_com__1_"/>
+        />
+
+        <EditText
+            android:id="@+id/etOfficialEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="12dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/style_edite_text_rounded_corner_with_line"
+            android:paddingStart="10dp"
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Official Email"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/baseline_email_24"/>
+
+        <EditText
+            android:id="@+id/etPersonalEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="12dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/style_edite_text_rounded_corner_with_line"
+            android:paddingStart="10dp"
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Personal Email"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/baseline_email_24"/>
+
+        <EditText
+            android:id="@+id/etMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="12dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/style_edite_text_rounded_corner_with_line"
+            android:paddingStart="10dp"
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:drawableStart="@drawable/baseline_call_24"/>
+
+
+        <EditText
+            android:id="@+id/etDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="12dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/style_edite_text_rounded_corner_with_line"
+            android:paddingStart="10dp"
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Designation"
+            android:inputType="text"
+            android:drawableStart="@drawable/baseline_computer_24"/>
+        />
+
+        <EditText
+            android:id="@+id/etTechStack"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="12dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/style_edite_text_rounded_corner_with_line"
+            android:paddingStart="10dp"
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Tech Stack"
+            android:inputType="text"
+            android:drawableStart="@drawable/baseline_auto_awesome_motion_24"/>
+        />
+
+        <EditText
+            android:id="@+id/etExperience"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="12dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/style_edite_text_rounded_corner_with_line"
+            android:paddingStart="10dp"
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Experience"
+            android:inputType="text"
+            android:drawableStart="@drawable/task_list_menu_document_svgrepo_com"/>
+        />
+
+        <EditText
+            android:id="@+id/etLinkedIn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="12dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/style_edite_text_rounded_corner_with_line"
+            android:paddingStart="10dp"
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="LinkedIn"
+            android:inputType="textUri"
+            android:drawableStart="@drawable/linkedin_svgrepo_com"/>
+
+        <EditText
+            android:id="@+id/etPortfolio"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="12dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/style_edite_text_rounded_corner_with_line"
+            android:paddingStart="10dp"
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Portfolio"
+            android:inputType="textUri"
+            android:drawableStart="@drawable/baseline_add_link_24"/>
+        <TextView
+            android:id="@+id/etDateOfJoining"
+            android:layout_width="match_parent"
+            android:drawablePadding="12dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/style_edite_text_rounded_corner_with_line"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="40dp"
+            android:text="Date of joining"
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"
+            android:drawableStart="@drawable/baseline_date_range_24"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/etTeam"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawablePadding="12dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/style_edite_text_rounded_corner_with_line"
+            android:paddingStart="10dp"
+            android:hint="Team"
+            android:drawableTint="@color/black"
+            android:textColorHint="@color/black"
+            android:drawableStart="@drawable/team_member_svgrepo_com"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

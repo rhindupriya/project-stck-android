@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/admin_Home"
+        android:icon="@drawable/home_1_svgrepo_com"
+        android:title="Home"/>
+    <item android:id="@+id/admin_Leave_Request"
+        android:icon="@drawable/gui_calendar_leave_svgrepo_com"
+        android:title="Leave_request"/>
+    <item android:id="@+id/admin_Proflie"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title="Proflie"/>
+</menu>

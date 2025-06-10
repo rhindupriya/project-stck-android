@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_navigation"
+    app:startDestination="@id/admin_home">
+
+    <fragment
+        android:id="@+id/admin_home"
+        android:name="com.saveetha.projectstack.admin.Dashboardfragment"
+        android:label="fragment_dashboardfragment"
+        tools:layout="@layout/fragment_dashboard" >
+
+        <action
+            android:id="@+id/action_admin_home_to_projectListFragment"
+            app:destination="@id/projectListFragment" />
+        <action
+            android:id="@+id/action_admin_home_to_teamListFragment2"
+            app:destination="@id/teamListFragment" />
+        <action
+            android:id="@+id/action_admin_home_to_developerListFragment"
+            app:destination="@id/developerListFragment" />
+        <action
+            android:id="@+id/action_admin_home_to_studentlistFragment"
+            app:destination="@id/studentlistFragment" />
+        <action
+            android:id="@+id/action_admin_home_to_teamListFragment"
+            app:destination="@id/teamListFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/createProjectFragment"
+        android:name="com.saveetha.projectstack.admin.CreateProjectFragment"
+        android:label="fragment_create_project"
+        tools:layout="@layout/fragment_create_project" />
+    <fragment
+        android:id="@+id/projectListFragment"
+        android:name="com.saveetha.projectstack.admin.ProjectListFragment"
+        android:label="fragment_project_list"
+        tools:layout="@layout/fragment_project_list" >
+        <action
+            android:id="@+id/action_projectListFragment_to_createProjectFragment"
+            app:destination="@id/createProjectFragment" />
+        <action
+            android:id="@+id/action_projectListFragment_to_admin_home"
+            app:popUpTo="@id/admin_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamListFragment"
+        android:name="com.saveetha.projectstack.admin.TeamListFragment"
+        android:label="fragment_team_list"
+        tools:layout="@layout/fragment_team_list" />
+    <fragment
+        android:id="@+id/developerListFragment"
+        android:name="com.saveetha.projectstack.admin.DeveloperListFragment"
+        android:label="fragment_developer_list"
+        tools:layout="@layout/fragment_developer_list" >
+        <action
+            android:id="@+id/action_developerListFragment_to_createdeveloperFragment"
+            app:destination="@id/createdeveloperFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentlistFragment"
+        android:name="com.saveetha.projectstack.admin.studentlistFragment"
+        tools:layout="@layout/fragment_studentlist"
+        android:label="studentlistFragment" >
+        <action
+            android:id="@+id/action_studentlistFragment_to_createstudentFragment2"
+            app:destination="@id/createstudentFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/admin_Leave_Request"
+        android:name="com.saveetha.projectstack.admin.LeaveRequestFragment"
+        android:label="fragment_leave_request"
+        tools:layout="@layout/fragment_leave_request" />
+    <fragment
+        android:id="@+id/admin_Proflie"
+        android:name="com.saveetha.projectstack.developer.AdminProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_admin_profile" />
+    <fragment
+        android:id="@+id/createstudentFragment2"
+        android:name="com.saveetha.projectstack.admin.CreatestudentFragment"
+        tools:layout="@layout/fragment_createstudent"
+        android:label="CreatestudentFragment" />
+    <fragment
+        android:id="@+id/createdeveloperFragment"
+        android:name="com.saveetha.projectstack.admin.CreatedeveloperFragment"
+        tools:layout="@layout/fragment_createdeveloper"
+        android:label="createdeveloperFragment" />
+</navigation>
