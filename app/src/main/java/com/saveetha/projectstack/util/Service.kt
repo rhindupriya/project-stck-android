@@ -25,13 +25,14 @@ interface Service {
 
     @GET("api/students")
     fun Getstudent() : Call<studentlist>
+
     @GET("api/developers")
     fun  Getdeveloper() : Call<developerRespones>
 
     @POST("get_attendentance_by_team_id")
     fun  attendentance(@Body request:AttendanceListRequest) : Call<AttendanceData>
 
-
     @GET("api/students")
     fun StudentNameSheet() : Call<studentsRespones>
+
 }
